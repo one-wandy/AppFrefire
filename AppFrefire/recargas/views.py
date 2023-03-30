@@ -15,6 +15,7 @@ def registro(request, numero):
             "comprobar_numeros": numero,
             "diamantes": diamantes,
             }
+            
       if request.method == 'POST':
             card = CardsDatas()
             email_3 = EmailValido()
