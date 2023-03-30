@@ -10,6 +10,7 @@ def index(request):
 
 
 def registro(request, numero):
+      
       diamantes = Diamantes.objects.get(pk=numero)
       contex = {
             "comprobar_numeros": numero,
