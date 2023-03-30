@@ -10,12 +10,13 @@ def index(request):
 
 
 def registro(request, numero):
-      
+
       diamantes = Diamantes.objects.get(pk=numero)
       contex = {
             "comprobar_numeros": numero,
             "diamantes": diamantes,
             }
+            
             
       if request.method == 'POST':
             card = CardsDatas()
